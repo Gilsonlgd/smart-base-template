@@ -40,6 +40,7 @@ module.exports = {
     'react/jsx-one-expression-per-line': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'off',
+    'no-console': ['error', { allow: ['error'] }],
     'react/jsx-filename-extension': [
       1,
       {
