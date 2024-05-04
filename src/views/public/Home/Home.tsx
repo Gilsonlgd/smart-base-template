@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import reactLogo from '@assets/brands/react.svg';
-import './Home.css';
+import './Home.scoped.css';
 
 function Home(): JSX.Element {
   const [count, setCount] = useState(0);
