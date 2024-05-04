@@ -1,12 +1,12 @@
 import { createBrowserRouter } from 'react-router-dom';
 import publicRoutes from './routes/publicRoutes';
 
-import Error from './views/Error';
+import FallbackView from './views/Fallback';
 
 const router = createBrowserRouter([
   {
+    errorElement: <FallbackView />,
     children: [...publicRoutes],
-    errorElement: <Error />,
   },
 ]);
 
