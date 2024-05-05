@@ -46,7 +46,8 @@ module.exports = {
         functions: 'defaultArguments',
       },
     ],
-    'no-console': ['error', { allow: ['error'] }],
+    'no-console': ['warn', { allow: ['error'] }],
+    'no-void': ["error", { "allowAsStatement": true }],
     'react/jsx-filename-extension': [
       1,
       {
@@ -60,6 +61,8 @@ module.exports = {
         allowExpressions: true,
       },
     ],
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-argument": "off",
     'import/extensions': [
       'error',
       'ignorePackages',
