@@ -1,9 +1,23 @@
-import { useState } from 'react';
-import reactLogo from '@assets/brands/react.svg';
+import { useState, useLayoutEffect } from 'react';
 import './Home.scoped.css';
+
+import reactLogo from '@assets/brands/react.svg';
+import api from '@services/api';
 
 function Home(): JSX.Element {
   const [count, setCount] = useState(0);
+  const [lorem, setLorem] = useState('');
+
+  useLayoutEffect(() => {
+    const loadLorem = async (): Promise<void> => {
+      const { data } = await api.get(
+        `https://baconipsum.com/api/?type=meat-and-filler&sentences=1&start-with-lorem=1`,
+      );
+      setLorem(data);
+    };
+
+    void loadLorem();
+  }, []);
 
   return (
     <div className="d-flex container-fluid overflow-auto bg-dark">
@@ -21,6 +35,7 @@ function Home(): JSX.Element {
         </div>
         <h1>Vite + React</h1>
         <div className="counter">
+          <p>Lorem is: {lorem}</p>
           <button
             className="mb-3"
             type="button"

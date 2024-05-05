@@ -13,6 +13,7 @@ export default defineConfig({
       '@components': path.resolve(__dirname, 'src/components'),
       '@views': path.resolve(__dirname, 'src/views'),
       '@layout': path.resolve(__dirname, 'src/layout'),
+      '@services': path.resolve(__dirname, 'src/services'),
     },
   },
 });
