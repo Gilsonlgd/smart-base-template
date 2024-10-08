@@ -15,7 +15,7 @@ function Fallback(): JSX.Element {
   }, [error]);
 
   return (
-    <div id="error-page" className="d-flex container-fluid overflow-auto h-100">
+    <div id="error-page" className="d-flex container-fluid">
       <div className="m-auto text-center text-light">
         <h1>Oops!</h1>
         <p>Sorry, an unexpected error has occurred.</p>

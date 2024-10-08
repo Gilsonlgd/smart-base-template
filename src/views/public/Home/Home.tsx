@@ -20,7 +20,7 @@ function Home(): JSX.Element {
   }, []);
 
   return (
-    <div className="d-flex container-fluid overflow-auto bg-dark">
+    <div className="d-flex container-fluid bg-dark">
       <div
         className="text-center m-auto text-light"
         style={{ maxWidth: '340px' }}

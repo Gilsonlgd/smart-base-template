@@ -1,7 +1,6 @@
 #root {
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  height: auto;
   max-width: none;
   padding: 0;
   
@@ -29,8 +28,10 @@ a:hover {
 
 body {
   margin: 0;
-  place-items: center;
-  min-height: 100vh;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: auto !important;
+  overflow-x: hidden;
 }
 
 h1 {
