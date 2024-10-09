@@ -1,13 +1,20 @@
-import React from 'react';
-import './{{ pascal.componentName }}.scss';
+import './{{ pascal.componentName }}.scoped.css';
 
 interface {{ pascal.componentName }}Props {
-  // The props of the component
-  prop1: string;
+  /* The props of the component */
+  requiredProp: string;
+  optionalProp?: string;
 }
 
-function {{ pascal.componentName }}({ prop1 }: {{ pascal.componentName }}Props): JSX.Element {
-  return <div className="{{ kebab.componentName }}">Your html here: {prop1}</div>;
+function {{ pascal.componentName }}({
+  requiredProp,
+  optionalProp = 'Default Value',
+}: {{ pascal.componentName }}Props): JSX.Element {
+  return (
+    <div className="{{ kebab.componentName }}">
+      Your html here: {requiredProp}, {optionalProp}
+    </div>
+  );
 }
 
 export default {{ pascal.componentName }};

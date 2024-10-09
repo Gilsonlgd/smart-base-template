@@ -1,13 +1,10 @@
-import React from 'react';
-import './{{ pascal.viewName }}.scss';
+import './{{ pascal.viewName }}.scoped.css';
 
 function {{ pascal.viewName }}(): JSX.Element {
   return (
-    <div className="container-fluid view">
-      <div className="container p-0" {% raw %}style={{ maxWidth: '1440px' }}{% endraw %}>
-        <div className="row">
-            {/* Your code here */}
-        </div>
+    <div className="container-fluid">
+      <div className="row">
+        {/* Your code here */}
       </div>
     </div> 
   );
