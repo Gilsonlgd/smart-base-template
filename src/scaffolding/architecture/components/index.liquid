@@ -1,0 +1,13 @@
+import React from 'react';
+import './{{ pascal.componentName }}.scss';
+
+interface {{ pascal.componentName }}Props {
+  // The props of the component
+  prop1: string;
+}
+
+function {{ pascal.componentName }}({ prop1 }: {{ pascal.componentName }}Props): JSX.Element {
+  return <div className="{{ kebab.componentName }}">Your html here: {prop1}</div>;
+}
+
+export default {{ pascal.componentName }};

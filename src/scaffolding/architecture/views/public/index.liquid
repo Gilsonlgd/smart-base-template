@@ -1,0 +1,16 @@
+import React from 'react';
+import './{{ pascal.viewName }}.scss';
+
+function {{ pascal.viewName }}(): JSX.Element {
+  return (
+    <div className="container-fluid view">
+      <div className="container p-0" {% raw %}style={{ maxWidth: '1440px' }}{% endraw %}>
+        <div className="row">
+            {/* Your code here */}
+        </div>
+      </div>
+    </div> 
+  );
+}
+
+export default {{ pascal.viewName }};
