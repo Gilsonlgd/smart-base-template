@@ -1,5 +1,6 @@
 #root {
   width: 100vw;
+  min-height: 100%;
   height: auto;
   max-width: none;
   padding: 0;

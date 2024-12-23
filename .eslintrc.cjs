@@ -47,12 +47,17 @@ module.exports = {
       },
     ],
     'no-console': ['warn', { allow: ['error'] }],
-    'no-void': ["error", { "allowAsStatement": true }],
+    'no-void': ['error', { allowAsStatement: true }],
     'react/jsx-filename-extension': [
       1,
       {
         extensions: ['.tsx'],
       },
+    ],
+    'class-methods-use-this': ['error', { exceptMethods: ['args'] }],
+    'import/no-extraneous-dependencies': [
+      'error',
+      { devDependencies: ['src/scaffolding/commands/*'] },
     ],
     'import/prefer-default-export': 'off',
     '@typescript-eslint/explicit-function-return-type': [
@@ -61,8 +66,8 @@ module.exports = {
         allowExpressions: true,
       },
     ],
-    "@typescript-eslint/no-unsafe-assignment": "off",
-    "@typescript-eslint/no-unsafe-argument": "off",
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-argument': 'off',
     'import/extensions': [
       'error',
       'ignorePackages',
